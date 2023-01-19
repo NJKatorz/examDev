@@ -50,5 +50,4 @@ describe("addExoplanet tests suites", () => {
         const result = addExoplanet("Trappiste$****01****-00");
         expect(result).toBe(false);
     });
-
 });
