@@ -10,10 +10,10 @@
         "test:watch": "jest --watchAll",
         "commit": "cz",
         "build": "webpack ./src/app.js -o public/",
-        "prettier": "prettier -c .",
-        "prettier:fix": "prettier -w .",
-        "lint": "eslint .",
-        "lint:fix": "eslint --fix .",
+        "prettier": "prettier -c \"**\"",
+        "prettier:fix": "prettier -w \"**\"",
+        "lint": "eslint \"**\"",
+        "lint:fix": "eslint --fix \"**\"",
         "code:fix": "npm run prettier:fix && npm run lint:fix"
     },
     "keywords": [
