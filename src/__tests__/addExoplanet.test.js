@@ -36,5 +36,11 @@ describe("addExoplanet tests suites", () => {
         expect(result).toBe(false);
     });
 
+    it("should return true as there is a space in the name", () => {
+        const result = addExoplanet("TRAP PIST");
+        expect(result).toBe(true);
+    });
+
+
 
 });
