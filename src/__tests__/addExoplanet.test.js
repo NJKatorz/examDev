@@ -41,6 +41,13 @@ describe("addExoplanet tests suites", () => {
         expect(result).toBe(true);
     });
 
+    it("should return true as there is a number in the name", () => {
+        const result = addExoplanet("TRAPPIST243");
+        expect(result).toBe(true);
+    });
+
+    
+
 
 
 });
