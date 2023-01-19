@@ -1,0 +1,42 @@
+{
+    "name": "exojavascriptplanet",
+    "version": "0.0.0",
+    "private": true,
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon -e '*' ./bin/www",
+        "test": "jest",
+        "test:coverage": "jest --coverage",
+        "test:watch": "jest --watchAll",
+        "commit": "cz",
+        "build": "webpack ./src/app.js -o public/",
+        "prettier": "prettier -c .",
+        "prettier:fix": "prettier -w .",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "code:fix": "npm run prettier:fix && npm run lint:fix"
+    },
+    "keywords": [
+        "devOps",
+        "tdd",
+        "ci",
+        "git"
+    ],
+    "author": "dls",
+    "license": "ISC",
+    "devDependencies": {
+        "commitizen": "^4.2.5",
+        "cz-conventional-changelog": "^3.3.0",
+        "eslint": "^8.27.0",
+        "eslint-config-prettier": "8.5.0",
+        "jest": "^29.3.1",
+        "prettier": "2.7.1",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^4.10.0"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}
