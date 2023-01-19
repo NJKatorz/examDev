@@ -46,8 +46,9 @@ describe("addExoplanet tests suites", () => {
         expect(result).toBe(true);
     });
 
-    
-
-
+    it("should return false as there are others characters than those of the instructions", () => {
+        const result = addExoplanet("Trappiste$****01****-00");
+        expect(result).toBe(false);
+    });
 
 });
