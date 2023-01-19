@@ -31,5 +31,10 @@ describe("addExoplanet tests suites", () => {
         expect(result).toBe(true);
     });
 
+    it("should return false as there is not a special character like '-' or '.' but another", () => {
+        const result = addExoplanet("TRAP*PIST");
+        expect(result).toBe(false);
+    });
+
 
 });
