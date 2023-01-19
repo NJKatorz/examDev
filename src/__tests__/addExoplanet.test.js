@@ -5,4 +5,10 @@ describe("addExoplanet tests suites", () => {
         const result = addExoplanet("");
         expect(result).toBe(false);
     });
+
+    it("should return false as the characters are not in uppercase", () => {
+        const result = addExoplanet("trappist");
+        expect(result).toBe(false);
+    });
+
 });
