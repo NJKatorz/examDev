@@ -11,4 +11,10 @@ describe("addExoplanet tests suites", () => {
         expect(result).toBe(false);
     });
 
+    it("should return true as the characters are in uppercase", () => {
+        const result = addExoplanet("TRAPPIST");
+        expect(result).toBe(true);
+    });
+
+
 });
